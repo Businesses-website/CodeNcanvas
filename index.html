@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeNcanvas - Frontend Developer Portfolio</title>
+    <meta name="description"
+        content="Professional frontend developer specializing in modern web interfaces, responsive design, and user experience optimization.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">code<span class="highlight">N</span>canvas</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-up">
+                Crafting Beautiful<br>
+                <span class="gradient-text">Frontend</span> Experiences
+            </h1>
+            <p class="hero-description animate-slide-up">
+                Frontend developer specializing in modern, responsive web interfaces that combine stunning visuals with
+                seamless user experiences.
+            </p>
+            <div class="hero-buttons animate-fade-in">
+                <a href="#work" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text animate-slide-left">
+                    <h2 class="section-title">
+                        About <span class="gradient-text">codeNcanvas</span>
+                    </h2>
+                    <p class="about-description">
+                        With over 4 years of experience in frontend development, I specialize in creating beautiful,
+                        responsive web interfaces that provide exceptional user experiences. My expertise includes
+                        modern JavaScript frameworks, CSS animations, and mobile-first design principles.
+                    </p>
+                    <p class="about-description">
+                        I focus on writing clean, efficient code and implementing the latest web standards to ensure
+                        your website performs flawlessly across all devices and browsers.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section animate-slide-right">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript/TypeScript</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>React/Vue.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>CSS/SASS</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Responsive Design</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-item">HTML5</div>
+                        <div class="tech-item">CSS3</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">Vue.js</div>
+                        <div class="tech-item">SASS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2 class="section-title">
+                    Services <span class="gradient-text">I Offer</span>
+                </h2>
+                <p class="section-description">
+                    Comprehensive frontend development services to bring your digital vision to life with modern
+                    technologies and best practices.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Creating beautiful, mobile-first responsive designs that work flawlessly across all devices and
+                        screen sizes.</p>
+                    <ul class="service-features">
+                        <li>Mobile-First Approach</li>
+                        <li>Cross-Browser Compatibility</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                        </svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building modern, interactive web applications using the latest JavaScript frameworks and
+                        libraries.</p>
+                    <ul class="service-features">
+                        <li>React & Vue.js Development</li>
+                        <li>TypeScript Integration</li>
+                        <li>State Management</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0013 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z" />
+                        </svg>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimizing website performance, loading speeds, and user experience through modern web
+                        development techniques.</p>
+                    <ul class="service-features">
+                        <li>Code Splitting & Lazy Loading</li>
+                        <li>Image Optimization</li>
+                        <li>Bundle Size Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM7 4V3h10v1H7zM7 18V6h10v12H7z" />
+                        </svg>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Creating progressive web apps and mobile-optimized experiences that feel native on all devices.
+                    </p>
+                    <ul class="service-features">
+                        <li>Progressive Web Apps</li>
+                        <li>Touch-Friendly Interfaces</li>
+                        <li>Offline Functionality</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                    </div>
+                    <h3>UI/UX Implementation</h3>
+                    <p>Converting designs into pixel-perfect, interactive user interfaces with smooth animations and
+                        transitions.</p>
+                    <ul class="service-features">
+                        <li>Pixel-Perfect Implementation</li>
+                        <li>Smooth Animations</li>
+                        <li>Accessibility Standards</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-fade-in">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" />
+                        </svg>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing website maintenance, updates, and technical support to keep your frontend running
+                        smoothly.</p>
+                    <ul class="service-features">
+                        <li>Regular Updates</li>
+                        <li>Bug Fixes</li>
+                        <li>Performance Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Work</span>
+                </h2>
+                <p class="section-description">
+                    A selection of recent frontend projects showcasing modern design implementation and cutting-edge
+                    development techniques.
+                </p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-app">Web Apps</button>
+                <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="DataFlow Dashboard">
+                        <div class="portfolio-overlay">
+                            <h4>DataFlow Dashboard</h4>
+                            <p>Modern analytics dashboard built with React and D3.js</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="landing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="Fashion Landing Page">
+                        <div class="portfolio-overlay">
+                            <h4>Luxe Fashion</h4>
+                            <p>Elegant fashion brand landing page with smooth animations</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>SASS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="Fitness Tracker">
+                        <div class="portfolio-overlay">
+                            <h4>FitTrack Pro</h4>
+                            <p>Progressive web app for fitness tracking with offline support</p>
+                            <div class="portfolio-tech">
+                                <span>Vue.js</span>
+                                <span>PWA</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="dashboard">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="Admin Dashboard">
+                        <div class="portfolio-overlay">
+                            <h4>Admin Pro Dashboard</h4>
+                            <p>Comprehensive admin dashboard with real-time data</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>Material-UI</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="landing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <h4>Bistro Elegance</h4>
+                            <p>Sophisticated restaurant website with interactive menu</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-app">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                            alt="Business Platform">
+                        <div class="portfolio-overlay">
+                            <h4>Business Hub</h4>
+                            <p>Modern business management platform with clean UI</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2 class="section-title">
+                    Client <span class="gradient-text">Reviews</span>
+                </h2>
+                <p class="section-description">
+                    What clients say about working with me and the frontend solutions we've created together.
+                </p>
+            </div>
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span>★★★★★</span>
+                    </div>
+                    <blockquote>
+                        "Working with codeNcanvas was seamless. They transformed our outdated website into a modern,
+                        responsive platform that helped us increase customer engagement."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80"
+                            alt="Marcus Johnson">
+                        <div>
+                            <h5>Priyanshu.A</h5>
+                            <span>CEO, Tech grow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span>★★★★★</span>
+                    </div>
+                    <blockquote>
+                        "Great communication and fast delivery. I barely had to explain twice — they understood my
+                        vision perfectly and executed it."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&crop=faces&q=80"
+                            alt="Sarah Chen" width="80" height="80" />
+
+
+                        <div>
+                            <h5>Sarah Chen</h5>
+                            <span>Founder, Bloom Boutique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span>★★★★★</span>
+                    </div>
+                    <blockquote>
+                        "Professional, responsive, and incredibly talented frontend developer. The React application
+                        they built is fast, beautiful, and our users love the interface."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80"
+                            alt="David Rodriguez">
+                        <div>
+                            <h5>David Rodriguez</h5>
+                            <span>Creative Director, Nexus Agency</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="testimonials-nav">
+                <button class="nav-btn prev-btn" id="prev-testimonial">&lt;</button>
+                <button class="nav-btn next-btn" id="next-testimonial">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2 class="section-title">
+                    Let's <span class="gradient-text">Work Together</span>
+                </h2>
+                <p class="section-description">
+                    Ready to bring your frontend vision to life? Get in touch and let's discuss how we can create
+                    something amazing together.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-slide-left">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always excited to work on new frontend projects and help businesses create outstanding user
+                        experiences. Whether you need a responsive website, web application, or performance
+                        optimization, I'm here to help.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>code2website@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9439493613</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Odisha, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+                                    <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-grid">
+                            <a href="https://instagram.com/code_n_canvas_" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sanskar-jyoti-524130375/" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="https://pintrest.com" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.09.109.107.209.079.322-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Businesses-website" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.007 0C5.365 0 .029 5.336.029 11.979c0 5.287 3.425 9.789 8.175 11.374.598-.11.819-.26.819-.575 0-.282-.01-1.032-.015-2.024-3.338.724-4.042-1.608-4.042-1.608-.544-1.381-1.328-1.75-1.328-1.75-1.087-.742.082-.727.082-.727 1.202.085 1.835 1.234 1.835 1.234 1.07 1.834 2.809 1.304 3.494.997.108-.776.419-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112.007 5.8c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.814 1.103.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.216.694.824.576C20.566 21.797 24 17.3 24 12.007 24 5.365 18.642.007 12.007.007z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form animate-slide-right">
+                    <form action="https://formsubmit.co/sanskarjyoti45@gmail.com" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="responsive-design">Responsive Web Design</option>
+                                <option value="frontend-development">Frontend Development</option>
+                                <option value="performance-optimization">Performance Optimization</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select budget range</option>
+                                <option value="899-2k">₹899 - ₹2000 / $20 - $50 </option>
+                                <option value="3k-5k">₹3,000 - ₹5,000 / $ 55 - $75</option>
+                                <option value="15k-30k">₹6,000 - ₹8,000 / $ 80 - $110</option>
+                                <option value="30k+">₹10,000+ /$120+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell me about your project, goals, timeline, and any specific frontend requirements..."
+                                required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new frontend development tips and services.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        code<span class="highlight">N</span>canvas
+                    </div>
+                    <p>Creating exceptional frontend experiences through innovative development and modern design
+                        implementation. Let's bring your digital vision to life.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/code_n_canvas_/" class="footer-social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanskar-jyoti-524130375/" class="footer-social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Businesses-website" class="footer-social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.007 0C5.365 0 .029 5.336.029 11.979c0 5.287 3.425 9.789 8.175 11.374.598-.11.819-.26.819-.575 0-.282-.01-1.032-.015-2.024-3.338.724-4.042-1.608-4.042-1.608-.544-1.381-1.328-1.75-1.328-1.75-1.087-.742.082-.727.082-.727 1.202.085 1.835 1.234 1.835 1.234 1.07 1.834 2.809 1.304 3.494.997.108-.776.419-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112.007 5.8c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.814 1.103.814 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.216.694.824.576C20.566 21.797 24 17.3 24 12.007 24 5.365 18.642.007 12.007.007z" />
+                            </svg>
+                        </a>
+                        <a href="https://pintrest.com" class="footer-social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.09.109.107.209.079.322-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Responsive Web Design</a></li>
+                        <li><a href="#services">Frontend Development</a></li>
+                        <li><a href="#services">Performance Optimization</a></li <li><a href="#services">Mobile
+                            Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Portfolio</a></li>
+                        <li><a href="#reviews">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <span>code2website@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                        <span>+91 9439493613</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>Odisha,India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 codeNcanvas. All rights reserved.</p>
+                    <p> Owner-Sanskar Jyoti Behera</p>
+                </div>
+                <div class="footer-legal"></div>
+                    <a href="#">Privacy Policy</a></div>
+                   
+                   
+                </div></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
